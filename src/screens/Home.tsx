@@ -49,6 +49,19 @@ export function HomeScreen({ navigation }: Props) {
     >
       <Text style={{ color: 'white' }}>Pan Gesture</Text>
     </TouchableOpacity>,
+    <TouchableOpacity
+      key={3}
+      style={{
+        width: '100%',
+        height: 55,
+        backgroundColor: '#3a3ad1',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+      onPress={() => navigation.navigate('Transitions')}
+    >
+      <Text style={{ color: 'white' }}>Transitions</Text>
+    </TouchableOpacity>,
   ];
 
   return (
