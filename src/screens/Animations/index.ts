@@ -1,0 +1,1 @@
+export { ChatBubbleAnimation } from './Bubble';

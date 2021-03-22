@@ -62,6 +62,19 @@ export function HomeScreen({ navigation }: Props) {
     >
       <Text style={{ color: 'white' }}>Transitions</Text>
     </TouchableOpacity>,
+    <TouchableOpacity
+      key={4}
+      style={{
+        width: '100%',
+        height: 55,
+        backgroundColor: '#3a3ad1',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+      onPress={() => navigation.navigate('ChatBubbleAnimation')}
+    >
+      <Text style={{ color: 'white' }}>Higher-order Animations</Text>
+    </TouchableOpacity>,
   ];
 
   return (
