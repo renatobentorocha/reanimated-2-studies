@@ -7,6 +7,7 @@ import { HomeScreen } from '../screens/Home';
 import PanGesture from '../screens/PanGesture';
 import Transitions from '../screens/Transitions/Transitions';
 import { ChatBubbleAnimation } from '../screens/Animations/Bubble';
+import { CircularSlider } from '../screens/CircularSlider';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -14,6 +15,7 @@ export type RootStackParamList = {
   PanGesture: undefined;
   Transitions: undefined;
   ChatBubbleAnimation: undefined;
+  CircularSlider: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -30,6 +32,7 @@ function Route() {
           name="ChatBubbleAnimation"
           component={ChatBubbleAnimation}
         />
+        <Stack.Screen name="CircularSlider" component={CircularSlider} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -75,6 +75,19 @@ export function HomeScreen({ navigation }: Props) {
     >
       <Text style={{ color: 'white' }}>Higher-order Animations</Text>
     </TouchableOpacity>,
+    <TouchableOpacity
+      key={5}
+      style={{
+        width: '100%',
+        height: 55,
+        backgroundColor: '#3a3ad1',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+      onPress={() => navigation.navigate('CircularSlider')}
+    >
+      <Text style={{ color: 'white' }}>Circular Slider</Text>
+    </TouchableOpacity>,
   ];
 
   return (
