@@ -9,6 +9,7 @@ import Transitions from '../screens/Transitions/Transitions';
 import { ChatBubbleAnimation } from '../screens/Animations/Bubble';
 import { CircularSlider } from '../screens/CircularSlider';
 import { Graph } from '../screens/Graph';
+import { Swipe } from '../screens/Swiping';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -18,6 +19,7 @@ export type RootStackParamList = {
   ChatBubbleAnimation: undefined;
   CircularSlider: undefined;
   Graph: undefined;
+  Swipe: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -36,6 +38,7 @@ function Route() {
         />
         <Stack.Screen name="CircularSlider" component={CircularSlider} />
         <Stack.Screen name="Graph" component={Graph} />
+        <Stack.Screen name="Swipe" component={Swipe} />
       </Stack.Navigator>
     </NavigationContainer>
   );

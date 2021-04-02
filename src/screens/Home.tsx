@@ -101,6 +101,19 @@ export function HomeScreen({ navigation }: Props) {
     >
       <Text style={{ color: 'white' }}>Graph</Text>
     </TouchableOpacity>,
+    <TouchableOpacity
+      key={7}
+      style={{
+        width: '100%',
+        height: 55,
+        backgroundColor: '#3a3ad1',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+      onPress={() => navigation.navigate('Swipe')}
+    >
+      <Text style={{ color: 'white' }}>Swipe</Text>
+    </TouchableOpacity>,
   ];
 
   return (
