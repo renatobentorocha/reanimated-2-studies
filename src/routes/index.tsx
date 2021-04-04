@@ -11,6 +11,7 @@ import { CircularSlider } from '../screens/CircularSlider';
 import { Graph } from '../screens/Graph';
 import { Swipe } from '../screens/Swiping';
 import DynamicSpring from '../screens/DynamicSpring';
+import { DragToSort } from '../screens/DragToSort';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -22,6 +23,7 @@ export type RootStackParamList = {
   Graph: undefined;
   Swipe: undefined;
   DynamicSpring: undefined;
+  DragToSort: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -42,6 +44,7 @@ function Route() {
         <Stack.Screen name="Graph" component={Graph} />
         <Stack.Screen name="Swipe" component={Swipe} />
         <Stack.Screen name="DynamicSpring" component={DynamicSpring} />
+        <Stack.Screen name="DragToSort" component={DragToSort} />
       </Stack.Navigator>
     </NavigationContainer>
   );

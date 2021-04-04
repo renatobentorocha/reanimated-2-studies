@@ -125,7 +125,20 @@ export function HomeScreen({ navigation }: Props) {
       }}
       onPress={() => navigation.navigate('DynamicSpring')}
     >
-      <Text style={{ color: 'white' }}>DynamicSpring</Text>
+      <Text style={{ color: 'white' }}>Dynamic Spring</Text>
+    </TouchableOpacity>,
+    <TouchableOpacity
+      key={9}
+      style={{
+        width: '100%',
+        height: 55,
+        backgroundColor: '#3a3ad1',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+      onPress={() => navigation.navigate('DragToSort')}
+    >
+      <Text style={{ color: 'white' }}>Drag To Sort</Text>
     </TouchableOpacity>,
   ];
 
