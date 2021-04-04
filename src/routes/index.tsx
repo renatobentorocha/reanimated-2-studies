@@ -10,6 +10,7 @@ import { ChatBubbleAnimation } from '../screens/Animations/Bubble';
 import { CircularSlider } from '../screens/CircularSlider';
 import { Graph } from '../screens/Graph';
 import { Swipe } from '../screens/Swiping';
+import DynamicSpring from '../screens/DynamicSpring';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -20,6 +21,7 @@ export type RootStackParamList = {
   CircularSlider: undefined;
   Graph: undefined;
   Swipe: undefined;
+  DynamicSpring: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -39,6 +41,7 @@ function Route() {
         <Stack.Screen name="CircularSlider" component={CircularSlider} />
         <Stack.Screen name="Graph" component={Graph} />
         <Stack.Screen name="Swipe" component={Swipe} />
+        <Stack.Screen name="DynamicSpring" component={DynamicSpring} />
       </Stack.Navigator>
     </NavigationContainer>
   );

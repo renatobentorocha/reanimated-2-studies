@@ -114,6 +114,19 @@ export function HomeScreen({ navigation }: Props) {
     >
       <Text style={{ color: 'white' }}>Swipe</Text>
     </TouchableOpacity>,
+    <TouchableOpacity
+      key={8}
+      style={{
+        width: '100%',
+        height: 55,
+        backgroundColor: '#3a3ad1',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+      onPress={() => navigation.navigate('DynamicSpring')}
+    >
+      <Text style={{ color: 'white' }}>DynamicSpring</Text>
+    </TouchableOpacity>,
   ];
 
   return (
