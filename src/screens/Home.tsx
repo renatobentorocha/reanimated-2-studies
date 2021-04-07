@@ -140,6 +140,19 @@ export function HomeScreen({ navigation }: Props) {
     >
       <Text style={{ color: 'white' }}>Drag To Sort</Text>
     </TouchableOpacity>,
+    <TouchableOpacity
+      key={10}
+      style={{
+        width: '100%',
+        height: 55,
+        backgroundColor: '#3a3ad1',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+      onPress={() => navigation.navigate('Bezier')}
+    >
+      <Text style={{ color: 'white' }}>Bezier</Text>
+    </TouchableOpacity>,
   ];
 
   return (

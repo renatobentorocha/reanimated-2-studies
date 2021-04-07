@@ -12,6 +12,7 @@ import { Graph } from '../screens/Graph';
 import { Swipe } from '../screens/Swiping';
 import DynamicSpring from '../screens/DynamicSpring';
 import { DragToSort } from '../screens/DragToSort';
+import { Bezier } from '../screens/Bezier';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -24,6 +25,7 @@ export type RootStackParamList = {
   Swipe: undefined;
   DynamicSpring: undefined;
   DragToSort: undefined;
+  Bezier: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -45,6 +47,7 @@ function Route() {
         <Stack.Screen name="Swipe" component={Swipe} />
         <Stack.Screen name="DynamicSpring" component={DynamicSpring} />
         <Stack.Screen name="DragToSort" component={DragToSort} />
+        <Stack.Screen name="Bezier" component={Bezier} />
       </Stack.Navigator>
     </NavigationContainer>
   );
